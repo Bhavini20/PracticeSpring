@@ -1,0 +1,13 @@
+package com.practice.springboot;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		
+		Coach theCoach = new TrackCoach();
+		System.out.println(theCoach.getDailyWorkout());
+        Coach n = new BasketballCoach();
+        System.out.println(n.getDailyWorkout());
+	}
+
+}
