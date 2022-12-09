@@ -5,7 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class HelloSpringApp {
 
 	public static void main(String[] args) {
-		//git really practice again
+		
+		//load spring configuration file
 ClassPathXmlApplicationContext context =  new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// retrieve bean from the spring container
