@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Define your beans yay here -->
+    <!-- Define your beans here -->
     
     <!-- define the dependency -->
     <bean id="myFortune" 
