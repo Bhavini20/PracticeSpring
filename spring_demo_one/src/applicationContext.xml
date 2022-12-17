@@ -7,11 +7,15 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+<<<<<<< HEAD
     <!-- loading the properties file  -->
     <context:property-placeholder location="classpath:sport.properties"/>
 
 
     <!-- Define your beans here -->
+=======
+    <!-- Define your beans here --->
+>>>>>>> aa51e647e60070f2cb217f645e7ed8d64c9e0516
     
     <!-- define the dependency -->
     <bean id="myFortune" 
