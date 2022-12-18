@@ -8,7 +8,7 @@ public class SetterDemoApp {
 
 	public static void main(String[] args) {
 		
-		//load the configuration file
+		//load the configuration file to the program
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); 
 		
 		//retrieve the bean
