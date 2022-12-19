@@ -24,10 +24,17 @@ public TrackCoach() {
 
 	@Override
 public String getDailyFortune() {
-		
 		//use my fortune service for fortune 
-		
 		return "Yayyy" +fortuneService.getFortune();
 	}
-
+	
+	//add an init method
+	public void doMyStartStuff() {
+		System.out.println("TrackCoach: inside method startupstuff");
+	}
+	
+	//add a destroy method
+    public void doMyCleanupStuff() {
+    	System.out.println("Trackcoach: inside method cleanupstuff");
+    }
 }
