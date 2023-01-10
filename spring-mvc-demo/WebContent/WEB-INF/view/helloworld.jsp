@@ -3,15 +3,15 @@
 
 <body>
 
-<form action="processForm" method="GET">
 
-<input type="text" name="studentName" 
-placeholder="Whats your name?" />
+<h1>Hello world of spring</h1>
+<br><br>
 
-<input type="submit" />
+Student name: ${param.studentName}
 
-</form>
+<br><br>
 
+The message: ${message}
 
 </body>
 
