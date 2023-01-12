@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,17 @@
 Student name: ${student.firstName} ${student.lastName}
 <br><br>
 
+Language name = ${student.favoriteLanguage }
+
+<br><br>
+
 Country name: ${student.country }
+
+<br><br>
+
+Operating Systems name = ${student.operatingSystems }
+
+
 
 </body>
 
