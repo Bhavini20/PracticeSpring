@@ -39,6 +39,7 @@ public class PrimaryKeyDemo {
 					session.save(tempStudent3);
 					
 					// commit transaction
+					//to store it
 					session.getTransaction().commit();
 					
 					System.out.println("Done!!!");
