@@ -1,13 +1,12 @@
 package com.practice.hibernate.demo;
 
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import com.practice.hibernate.demo.entity.Student;
 
-public class CreateStudentDemo {
+public class DeleteStudentDemo {
 
 	public static void main(String[] args) {
 		
@@ -21,19 +20,27 @@ public class CreateStudentDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			// create a student object
-			System.out.println("Creating new student object...");
+            int studentId = 1;
 			
-			Student tempStudent = new Student("Paul", "Wall", "paul@gmail.com");
-			
-			// start a transaction
+			// now get a new session and start transaction
+			session = factory.getCurrentSession();
 			session.beginTransaction();
 			
-			// save the student object
-			System.out.println("Saving the student...");
-			session.save(tempStudent);
+			// retrieve student based on the id: primary key
+		//	System.out.println("\nGetting student with id: " + studentId);
 			
-			// commit transaction
+		//	Student myStudent = session.get(Student.class, studentId);
+			
+			// delete the student
+		//	System.out.println("Deleting student: " + myStudent);
+		//	session.delete(myStudent);
+			
+			// delete student id  = 2
+			System.out.println("Deleting student id = 2");
+			
+			session.createQuery("delete from Student where id = 2").executeUpdate();
+			
+			// commit the transaction
 			session.getTransaction().commit();
 			
 			System.out.println("Done!!!");
