@@ -38,8 +38,6 @@ public class UpdateStudentDemo {
 			// commit the transaction
 			session.getTransaction().commit();
 			
-			// NEW CODE
-			
 			session = factory.getCurrentSession();
 			session.beginTransaction();
 			
